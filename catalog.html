@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="top top_catalog center">
+        <header class="header">
+            <a href="index.html"><img class="logo" src="images/logo.svg"></a>
+            <input class="header__input" type="text" placeholder="Поиск">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li><a class="header__link" href="catalog.html">Каталог</a></li>
+                    <li><a class="header__link" href="cart.html">Корзина</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 class="top__text">Каталог</h1>
+    </section>
+    <section class="filters-box center">
+        <p><a class="filters__url" href="index.html">Главная</a> / <a class="filters__url" href="catalog.html">Каталог товаров</a></p>
+        <div class="filters">
+            <select class="filter" name="filter" id="city-select">
+                <option value="">Фильтрация</option>
+            </select>
+            <select class="filter" name="filter" id="city-select">
+                <option value="popularity">По популярности</option>
+            </select>
+        </div>
+    </section>
+    <section class="product-box center">
+        <section class="product-content">
+            <article class="product">    
+                <img src="images/catalog-1.jpeg" alt="">
+                <h3 class="product__name">Кровать TATRAN</h3>
+                <p class="product__description">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+                <p class="product__price">120 000 руб.</p>
+            </article>
+            <article class="product">    
+                <img src="images/product5.jpeg" alt="">
+                <h3 class="product__name">Кресло VILORA</h3>
+                <p class="product__description">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань. </p>
+                <p class="product__price">21 000 руб.</p>
+            </article>
+            <article class="product">    
+                <img src="images/catalog-3.jpeg" alt="">
+                <h3 class="product__name">Стол MENU</h3>
+                <p class="product__description">Европейский дуб - отличается особой прочностью и стабильностью. </p>
+                <p class="product__price">34 000 руб.</p>
+            </article>
+            <article class="product">    
+                <img src="images/catalog-4.jpeg" alt="">
+                <h3 class="product__name">Кресло ASKESTA</h3>
+                <p class="product__description">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать</p>
+                <p class="product__price">68 000 руб.</p>
+            </article>
+            <article class="product">    
+                <img src="images/catalog-5.jpeg" alt="">
+                <h3 class="product__name">Кресло LUNAR</h3>
+                <p class="product__description">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
+                <p class="product__price">40 000 руб.</p>
+            </article>
+            <article class="product">       
+                <img src="images/catalog-6.jpeg" alt="">
+                <h3 class="product__name">Шкаф Nastan</h3>
+                <p class="product__description">Мебель может быть оснащена разнообразными системами подсветки.</p>
+                <p class="product__price">80 000 руб.</p>
+            </article>
+            <article class="product">    
+                <img src="images/catalog-1.jpeg" alt="">
+                <h3 class="product__name">Кровать TATRAN</h3>
+                <p class="product__description">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+                <p class="product__price">120 000 руб.</p>
+            </article>
+            <article class="product">    
+                <img src="images/product5.jpeg" alt="">
+                <h3 class="product__name">Кресло VILORA</h3>
+                <p class="product__description">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань. </p>
+                <p class="product__price">21 000 руб.</p>
+            </article>
+            <article class="product">    
+                <img src="images/catalog-3.jpeg" alt="">
+                <h3 class="product__name">Стол MENU</h3>
+                <p class="product__description">Европейский дуб - отличается особой прочностью и стабильностью. </p>
+                <p class="product__price">34 000 руб.</p>
+            </article>
+            <article class="product">    
+                <img src="images/catalog-4.jpeg" alt="">
+                <h3 class="product__name">Кресло ASKESTA</h3>
+                <p class="product__description">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать</p>
+                <p class="product__price">68 000 руб.</p>
+            </article>
+            <article class="product">    
+                <img src="images/catalog-5.jpeg" alt="">
+                <h3 class="product__name">Кресло LUNAR</h3>
+                <p class="product__description">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
+                <p class="product__price">40 000 руб.</p>
+            </article>
+            <article class="product">       
+                <img src="images/catalog-6.jpeg" alt="">
+                <h3 class="product__name">Шкаф Nastan</h3>
+                <p class="product__description">Мебель может быть оснащена разнообразными системами подсветки.</p>
+                <p class="product__price">80 000 руб.</p>
+            </article>
+        </section>
+    </section>
+    <div class="link-box center">
+        <a href="" class="link-box__link">Показать ещё</a>
+    </div>
+    <footer class="footer center">
+        <a href="index.html"><img src="images/darklogo.svg" alt="" class="logo"></a>
+        <div class="footer__content">
+            <div class="footer__info">
+                <nav class="footer__item">
+                    <h3 class="footer__text">Меню</h3>
+                    <a href="" class="footer__url" href="index.html">Главная</a>
+                    <a href="" class="footer__url" href="catalog.html">Каталог</a>
+                    <a href="" class="footer__url" href="cart.html">Корзина</a>
+                </nav>
+                <div class="footer__item">
+                    <h3 class="footer__text">Контакты</h3>
+                    <a class="footer__url" href="tel:79088008080">+7 908 800 80 80</a>
+                    <a class="footer__url" href="mailto:help@interier.com">help@interier.com</a>
+                    <div class="networks">
+                        <a href="/images/vk.svg"><img src="images/vk.svg" alt=""></a>
+                        <a href="/images/telegram.svg"><img src="images/telegram.svg" alt=""></a>
+                        <a href="/images/dzen.svg"><img src="images/dzen.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <form action="" class="news">
+                <p class="news__text">Получайте наши новости и обновления</p>
+                <input class="news__input" placeholder="Ваш email" type="email">
+                <button class="news__button">Подписаться</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>

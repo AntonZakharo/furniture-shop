@@ -1,0 +1,221 @@
+$mainFont: "Montserrat";
+
+.top_cart {
+    background-image: url(./images/cart_header.jpeg);
+    height: 400px;
+}
+
+.top__heading {
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 70px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 127px;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 64px;
+    &__content {
+        grid-column: span 8;
+    }
+    &__form {
+        grid-column: span 4;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0.5px solid rgb(202, 205, 216);
+    }
+    &__text {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-bottom: 14px;
+    }
+    &__text:last-child {
+        margin-right: 27px;
+    }
+    &__items {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        & div:last-child {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    &__item {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0.5px solid rgb(202, 205, 216);
+        padding-bottom: 32px;
+        &-left {
+            display: flex;
+            gap: 32px;
+        }
+        &-image {
+            width: 173px;
+            height: 173px;
+        }
+        &-info {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        &-name {
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 29px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+        &-description {
+            color: rgb(136, 136, 136);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: left;
+            width: 276px;
+        }
+        &-price {
+            color: rgb(5, 5, 5);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0%;
+        }
+        &-urls {
+            display: flex;
+            gap: 30px;
+        }
+        &-url {
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 210%;
+            letter-spacing: 0px;
+            text-align: center;
+            text-decoration-line: underline;
+        }
+        &-url:hover {
+            color: rgb(136, 136, 136);
+            text-decoration: none;
+        }
+        &-input {
+            width: 71px;
+            height: 51px;
+            border-radius: 6px;
+            background: rgb(247, 246, 246);
+            color: rgb(0, 0, 0);
+            font-family: $mainFont;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 210%;
+            letter-spacing: 0px;
+            text-align: center;
+            border: none;
+        }
+    }
+    &__buttons {
+        display: flex;
+        gap: 7px;
+    }
+    &__button {
+        color: rgb(2, 2, 2);
+        font-family: $mainFont;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding: 10px 33px;
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        background: transparent;
+        margin-top: 50px;
+
+    }
+    &__form {
+        border-radius: 20px;
+        background: rgb(247, 246, 246);
+        padding-top: 42px;
+        padding-bottom: 148px;
+        text-align: center;
+        width: 379px;
+        margin-left: 25px;
+        &-heading {
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29px;
+            letter-spacing: 0px;
+            text-align: center;
+            
+        }
+        &-inputs {
+            margin-top: 35px;
+            margin-right: 56px;
+            margin-left: 35px;
+            display: flex;
+            flex-direction: column;
+            gap: 41px;
+            margin-bottom: 64px;
+            color: rgb(0, 0, 0);
+            font-family: $mainFont;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+        &-input {
+            border: none;
+            border-bottom: 1px solid rgb(202, 205, 216);
+            background-color: transparent;
+            &::placeholder {
+                color: rgb(0, 0, 0);
+                font-family: $mainFont;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0px;
+            }
+        }
+        &-total {
+            color: rgb(0, 0, 0);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 0px;
+        }
+        &-price {
+            font-weight: 500;
+        }
+        &-button {
+            box-sizing: border-box;
+            border: 1px solid rgb(4, 4, 4);
+            border-radius: 20px;
+            padding: 10px 76px;
+            margin-top: 18px;
+            font-family: $mainFont;
+            background: transparent;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+    }
+}
