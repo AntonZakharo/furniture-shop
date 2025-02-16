@@ -19,6 +19,7 @@ $mainFont: "Montserrat";
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin-top: 64px;
+    margin-bottom: 64px;
     &__content {
         grid-column: span 8;
     }

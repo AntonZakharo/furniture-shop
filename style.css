@@ -18,6 +18,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin-top: 64px;
+  margin-bottom: 64px;
 }
 .cart__content {
   grid-column: span 8;
@@ -245,7 +246,7 @@ fieldset {
 
 .filters-box {
   margin-top: 64px;
-  margin-bottom: 41px;
+  margin-bottom: 37px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -270,12 +271,42 @@ fieldset {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0%;
-  text-align: left;
   box-sizing: border-box;
   border: 1px solid rgb(196, 196, 196);
   border-radius: 20px;
   padding: 10px 23px;
   background-color: white;
+  padding-right: 54px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.filter-left {
+  position: relative;
+}
+
+.filters-select {
+  position: relative;
+}
+
+.filters-select::after {
+  content: url(images/option_triangle.svg);
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index: 1;
+  width: 20px;
+  height: 11px;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.filter_thin-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
 }
 
 .form {
@@ -285,8 +316,9 @@ fieldset {
   padding: 40px 48px;
   position: absolute;
   background-color: white;
-  top: 515px;
-  right: 575px;
+  width: 541.5px;
+  top: 55px;
+  right: 0;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -2px -2px 2px rgba(0, 0, 0, 0.2);
 }
 .form__content {
@@ -301,6 +333,11 @@ fieldset {
   position: relative;
   cursor: pointer;
   padding-left: 29px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 .form__time-radio + label::before {
   content: "";
@@ -328,9 +365,23 @@ fieldset {
 .form__time-radio:checked + label::before {
   border-color: black;
 }
+.form__runner {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  top: 0;
+}
 .form__runner::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 50%;
+  position: relative;
+  top: -3px;
+  cursor: pointer;
 }
 .form__runner::-webkit-slider-runnable-track {
   -webkit-appearance: none;
@@ -345,6 +396,9 @@ fieldset {
   height: 8px;
   background: #000;
   border-radius: 50%;
+  position: relative;
+  top: -10px;
+  cursor: pointer;
 }
 .form__runner::-moz-range-track {
   -moz-appearance: none;
@@ -354,10 +408,7 @@ fieldset {
 }
 .form__runners {
   position: relative;
-}
-.form__runner:last-child {
-  position: absolute;
-  left: 0;
+  margin-top: 14px;
 }
 .form__runner-heading {
   color: rgb(0, 0, 0);
@@ -491,6 +542,7 @@ fieldset {
   flex-direction: column;
   gap: 14px;
   padding-right: 36px;
+  white-space: nowrap;
 }
 .form__fieldset_price {
   width: 190.5px;
@@ -503,6 +555,19 @@ fieldset {
 
 #black + label::before {
   background: black;
+}
+
+#black:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 6.5px;
+  height: 4.5px;
+  border: solid #fff;
+  border-width: 0px 0px 1px 1px;
+  transform: rotate(-55deg) translateY(-50%);
 }
 
 #gray + label::before {
@@ -687,7 +752,7 @@ button:hover {
 }
 
 .for-box {
-  margin-top: 64px;
+  margin: 64px 0;
 }
 
 .for-box__text {
@@ -743,14 +808,14 @@ button:hover {
   background: url(images/for-5.jpeg);
 }
 
+.product-box_margin {
+  margin-top: 64px;
+}
+
 .product-content {
   display: flex;
   flex-wrap: wrap;
   gap: 13px;
-}
-
-.product-box {
-  margin-top: 64px;
 }
 
 .product {

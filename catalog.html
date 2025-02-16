@@ -23,71 +23,77 @@
     <section class="filters-box center">
         <p><a class="filters__url" href="index.html">Главная</a> / <a class="filters__url" href="catalog.html">Каталог товаров</a></p>
         <div class="filters">
-            <select class="filter" name="filter" id="city-select">
-                <option value="">Фильтрация</option>
-            </select>
-            <form action="#" method="GET" class="form">
-                <div class="form__content">
-                    <div class="form__left">
-                        <fieldset class="form__fieldset form__fieldset_times">
-                            <legend class="form__heading">Сроки доставки</legend>
-                            <div class="form__times">
-                                <div class="form__time"><input class="form__time-radio" id="nomatter" name="time" type="radio"><label for="nomatter"></label>Неважно</div>
-                                <div class="form__time"><input class="form__time-radio" id="today" name="time" type="radio"><label for="today"></label>Сегодня</div>
-                                <div class="form__time"><input class="form__time-radio" id="tomorrow" name="time" type="radio"><label for="tomorrow">Завтра</label></div>
-                                <div class="form__time"><input class="form__time-radio" id="3days" name="time" type="radio"><label for="3days">До 3 дней</label></div>
-                                <div class="form__time"><input class="form__time-radio" id="7days" name="time" type="radio"><label for="7days">До 7 дней</label></div>
-                            </div>
-                        </fieldset>
-                        <fieldset class="form__fieldset form__fieldset_price">
-                            <legend class="form__heading">Цена</legend>
-                            <label class="form__runner-heading" for="price-runner">от 0 руб. до 100000 руб.</label>
-                            <div class="form__runners">
-                                <input class="form__runner" type="range" min="0" max="100000" value="0" name="price-runner" id="max-price">
-                                <input class="form__runner" type="range" min="0" max="100000" value="10000" name="price-runner" id="min-price">
-                            </div>
-                        </fieldset>
-                        <fieldset class="form__fieldset form__fieldset_colors">
-                            <legend class="form__heading">Цвет</legend>
-                            <div class="form__colors">
-                                <div><input class="form__color" type="checkbox" name="color" id="white"><label for="white"></label></div>
-                                <div><input class="form__color" type="checkbox" name="color" id="black"><label for="black"></label></div>
-                                <div><input class="form__color" type="checkbox" name="color" id="gray"><label for="gray"></label></div>
-                                <div><input class="form__color" type="checkbox" name="color" id="red"><label for="red"></label></div>
-                                <div><input class="form__color" type="checkbox" name="color" id="orange"><label for="orange"></label></div>
-                                <div><input class="form__color" type="checkbox" name="color" id="yellow"><label for="yellow"></label></div>
-                                <div><input class="form__color" type="checkbox" name="color" id="green"><label for="green"></label></div>
-                                <div><input class="form__color" type="checkbox" name="color" id="light-green"><label for="light-green"></label></div>
-                                <div><input class="form__color" type="checkbox" name="color" id="blue"><label for="blue"></label></div>
-                                <div><input class="form__color" type="checkbox" name="color" id="darkblue"><label for="darkblue"></label></div>
-                                <div><input class="form__color" type="checkbox" name="color" id="purple"><label for="purple"></label></div>
-                                <div><input class="form__color" type="checkbox" name="color" id="violet"><label for="violet"></label></div>
-                                <div><input class="form__color" type="checkbox" name="color" id="light-pink"><label for="light-pink"></label></div>
-                                <div><input class="form__color" type="checkbox" name="color" id="pink"><label for="pink"></label></div>
+            <div class="filter-left">
+                <div class="filters-select">
+                    <select class="filter" name="filter" id="city-select">
+                        <option value="">Фильтрация</option>
+                </select>
+                </div>
+                <form action="#" method="GET" class="form">
+                    <div class="form__content">
+                        <div class="form__left">
+                            <fieldset class="form__fieldset form__fieldset_times">
+                                <legend class="form__heading">Сроки доставки</legend>
+                                <div class="form__times">
+                                    <div class="form__time"><input class="form__time-radio" id="nomatter" name="time" type="radio"><label for="nomatter">Неважно</label></div>
+                                    <div class="form__time"><input class="form__time-radio" id="today" name="time" type="radio"><label for="today">Сегодня</label></div>    
+                                    <div class="form__time"><input class="form__time-radio" id="tomorrow" name="time" type="radio"><label for="tomorrow">Завтра</label></div>
+                                    <div class="form__time"><input class="form__time-radio" id="3days" name="time" type="radio"><label for="3days">До 3 дней</label></div>
+                                    <div class="form__time"><input class="form__time-radio" id="7days" name="time" type="radio"><label for="7days">До 7 дней</label></div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset form__fieldset_price">
+                                <legend class="form__heading">Цена</legend>
+                                <label class="form__runner-heading" for="price-runner">от 0 руб. до 100000 руб.</label>
+                                <div class="form__runners">
+                                    <input class="form__runner" type="range" min="0" max="100000" value="100000" name="price-runner" id="max-price">
+                                    <input class="form__runner" type="range" min="0" max="100000" value="0" name="price-runner" id="min-price">
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset form__fieldset_colors">
+                                <legend class="form__heading">Цвет</legend>
+                                <div class="form__colors">
+                                    <div><input class="form__color" type="checkbox" name="color" id="white"><label for="white"></label></div>
+                                    <div><input class="form__color" type="checkbox" name="color" id="black"><label for="black"></label></div>
+                                    <div><input class="form__color" type="checkbox" name="color" id="gray"><label for="gray"></label></div>
+                                    <div><input class="form__color" type="checkbox" name="color" id="red"><label for="red"></label></div>
+                                    <div><input class="form__color" type="checkbox" name="color" id="orange"><label for="orange"></label></div>
+                                    <div><input class="form__color" type="checkbox" name="color" id="yellow"><label for="yellow"></label></div>
+                                    <div><input class="form__color" type="checkbox" name="color" id="green"><label for="green"></label></div>
+                                    <div><input class="form__color" type="checkbox" name="color" id="light-green"><label for="light-green"></label></div>
+                                    <div><input class="form__color" type="checkbox" name="color" id="blue"><label for="blue"></label></div>
+                                    <div><input class="form__color" type="checkbox" name="color" id="darkblue"><label for="darkblue"></label></div>
+                                    <div><input class="form__color" type="checkbox" name="color" id="purple"><label for="purple"></label></div>
+                                    <div><input class="form__color" type="checkbox" name="color" id="violet"><label for="violet"></label></div>
+                                    <div><input class="form__color" type="checkbox" name="color" id="light-pink"><label for="light-pink"></label></div>
+                                    <div><input class="form__color" type="checkbox" name="color" id="pink"><label for="pink"></label></div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <fieldset class="form__fieldset form__fieldset_room-types">
+                            <legend class="form__heading">Тип команты</legend>
+                            <div class="form__room-types">
+                                <div><input class="form__room-type" type="checkbox" name="room-type" id="kitchen-and-canteen"><label for="kitchen-and-canteen">Кухня и столовая</label></div>
+                                <div><input class="form__room-type" type="checkbox" name="room-type" id="bathroom"><label for="bathroom">Ванная комната</label></div>
+                                <div><input class="form__room-type" type="checkbox" name="room-type" id="kids-room"><label for="kids-room">Детская комната</label></div>
+                                <div><input class="form__room-type" type="checkbox" name="room-type" id="home-office"><label for="home-office">Домашний офис</label></div>
+                                <div><input class="form__room-type" type="checkbox" name="room-type" id="living-room"><label for="living-room">Гостиная</label></div>
+                                <div><input class="form__room-type" type="checkbox" name="room-type" id="hallway"><label for="hallway">Прихожая</label></div>
+                                <div><input class="form__room-type" type="checkbox" name="room-type" id="bedroom"><label for="bedroom">Спальня</label></div>
+                                <div><input class="form__room-type" type="checkbox" name="room-type" id="wardrobe"><label for="wardrobe">Гардероб</label></div>
+                                <div><input class="form__room-type" type="checkbox" name="room-type" id="dacha"><label for="dacha">Дача</label></div>
+                                <div><input class="form__room-type" type="checkbox" name="room-type" id="light"><label for="light">Свет</label></div>
                             </div>
                         </fieldset>
                     </div>
-                    <fieldset class="form__fieldset form__fieldset_room-types">
-                        <legend class="form__heading">Тип команты</legend>
-                        <div class="form__room-types">
-                            <div><input class="form__room-type" type="checkbox" name="room-type" id="kitchen-and-canteen"><label for="kitchen-and-canteen">Кухня и столовая</label></div>
-                            <div><input class="form__room-type" type="checkbox" name="room-type" id="bathroom"><label for="bathroom">Ванная комната</label></div>
-                            <div><input class="form__room-type" type="checkbox" name="room-type" id="kids-room"><label for="kids-room">Детская комната</label></div>
-                            <div><input class="form__room-type" type="checkbox" name="room-type" id="home-office"><label for="home-office">Домашний офис</label></div>
-                            <div><input class="form__room-type" type="checkbox" name="room-type" id="living-room"><label for="living-room">Гостиная</label></div>
-                            <div><input class="form__room-type" type="checkbox" name="room-type" id="hallway"><label for="hallway">Прихожая</label></div>
-                            <div><input class="form__room-type" type="checkbox" name="room-type" id="bedroom"><label for="bedroom">Спальня</label></div>
-                            <div><input class="form__room-type" type="checkbox" name="room-type" id="wardrobe"><label for="wardrobe">Гардероб</label></div>
-                            <div><input class="form__room-type" type="checkbox" name="room-type" id="dacha"><label for="dacha">Дача</label></div>
-                            <div><input class="form__room-type" type="checkbox" name="room-type" id="light"><label for="light">Свет</label></div>
-                        </div>
-                    </fieldset>
-                </div>
-                <button class="form__button-submit" type="submit">Применить</button>
-            </form>
-            <select class="filter" name="filter" id="city-select">
-                <option value="popularity">По популярности</option>
-            </select>
+                    <button class="form__button-submit" type="submit">Применить</button>
+                </form>
+            </div>
+            <div class="filters-select">
+                <select class="filter filter_thin-text" name="filter" id="city-select">
+                    <option value="popularity">По популярности</option>
+                </select>
+            </div>
         </div>
     </section>
     <section class="product-box center">
