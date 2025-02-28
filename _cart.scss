@@ -17,7 +17,7 @@ $mainFont: "Montserrat";
 
 .cart {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     margin-top: 64px;
     margin-bottom: 64px;
     &__content {
@@ -131,6 +131,7 @@ $mainFont: "Montserrat";
     &__buttons {
         display: flex;
         gap: 7px;
+        margin-top: 50px;
     }
     &__button {
         color: rgb(2, 2, 2);
@@ -145,8 +146,6 @@ $mainFont: "Montserrat";
         border: 1px solid rgb(0, 0, 0);
         border-radius: 50px;
         background: transparent;
-        margin-top: 50px;
-
     }
     &__form {
         border-radius: 20px;
@@ -180,6 +179,7 @@ $mainFont: "Montserrat";
             line-height: 17px;
             letter-spacing: 0px;
             text-align: center;
+            width: 288px;
         }
         &-input {
             border: none;
@@ -219,4 +219,11 @@ $mainFont: "Montserrat";
             text-align: center;
         }
     }
+}
+
+.link-box__link-mob {
+    display: none;
+}
+.link-box__link-cart {
+    display: block;
 }

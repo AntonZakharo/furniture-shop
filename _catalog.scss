@@ -143,6 +143,7 @@ fieldset {
     &__runner {
         appearance: none;
         position: absolute;
+        width: 190px;
         top: 0;
     }
     &__runner::-webkit-slider-thumb {
@@ -160,6 +161,7 @@ fieldset {
         -webkit-appearance: none;
         appearance: none;
         height: 1px;
+        width: 190px;
         background: #000;
     }
     &__runner::-moz-range-thumb {
@@ -170,7 +172,7 @@ fieldset {
         background: #000;
         border-radius: 50%;
         position: relative;
-        top: -10px;
+        top: -3px;
         cursor: pointer;
     }
     &__runner::-moz-range-track {
@@ -190,6 +192,9 @@ fieldset {
         line-height: 17px;
         letter-spacing: 0%;
         text-align: left;
+    }
+    &__runner-heading-space {
+        margin-left: 14px;
     }
     &__fieldset_colors {
         width: 189px;

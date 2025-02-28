@@ -1,7 +1,6 @@
 $color-text: #ffffff;
 
-@import 'cart';
-@import 'catalog';
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 * {
@@ -32,6 +31,7 @@ button:hover {
 .top {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .top_index {
@@ -39,12 +39,7 @@ button:hover {
     height: 735px;
 }
 
-.logo {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 44px;
-    letter-spacing: 0%;
-    text-align: left;
+.header__logo {
     width: 198px;
     height: 44px;
 }
@@ -79,6 +74,9 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    &-mob {
+        display: none;
+    }
 }
 
 .header__link {
@@ -153,6 +151,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .for__item_big {
@@ -167,12 +166,21 @@ button:hover {
 }
 .for__item_3 {
     background: url(images/for-3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .for__item_4 {
     background: url(images/for-4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .for__item_5 {
     background: url(images/for-5.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .product-box_margin {
@@ -182,11 +190,11 @@ button:hover {
 .product-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 13px;
+    gap: 32px;
 }
 
 .product {
-    width: 391px;
+    width: 378px;
 }
 
 .product-box__text {
@@ -234,10 +242,9 @@ button:hover {
 }
 
 .link-box {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 32px;
+    margin-bottom: 64px;
     color: black;
-    height: 58px;
 }
 
 .link-box__link {
@@ -245,12 +252,18 @@ button:hover {
 }
 
 footer {
-    background-color: #F6F7F6;
-    display: flex;
+    background: #F7F6F6;
     padding-top: 32px;
-    padding-bottom: 58px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+.footer__logo {
+    @extend .header__logo
+}
 
 .footer__item {
     display: flex;
@@ -263,9 +276,10 @@ footer {
     gap: 129px
 }
 .footer__content {
+    width: 792px;
     display: flex;
-    flex-direction: row;
-    margin-left: 212px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer__text {
@@ -284,13 +298,18 @@ footer {
 }
 .networks {
     display: flex;
+    align-items: center;
     gap: 20px
+}
+
+.network:hover path {
+    fill: #000000;
 }
 
 .news {
     display: flex;
     flex-direction: column;
-    margin-left: 192px;
+    gap: 8px;
 }
 .news__text {
     font-size: 12px;
@@ -298,7 +317,6 @@ footer {
     line-height: 15px;
     letter-spacing: 0%;
     text-align: left;
-    margin-bottom: 8px;
 }
 
 .news__input {
@@ -334,8 +352,6 @@ footer {
     height: 40px;
     font-size: 15px;
     line-height: 18px;
-    color: #000;
-    margin-top: 8px;
     color: rgb(0, 0, 0);
     font-family: 'Montserrat';
     font-size: 12px;
@@ -345,3 +361,7 @@ footer {
 }
 
 
+@import 'cart';
+@import 'catalog';
+@import 'tablet';
+@import 'mobile'

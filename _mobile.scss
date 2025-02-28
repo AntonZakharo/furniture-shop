@@ -1,0 +1,185 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .header {
+        padding-top: 32px;
+        border-bottom: 0px;
+        &__input {
+            display: none;
+        }
+        &__nav {
+            display: none;
+            &-mob {
+                display: flex;
+                gap: 32px;
+                align-items: center;
+            }
+        }
+        &__logo {
+            width: 99px;
+        }
+    }
+    .top {
+        &__text {
+            margin-top: 82px;
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+        }
+        &__heading {
+            margin-top: 82px;
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+        }
+    }
+    
+    .start {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__text {
+            text-align: center;
+            margin-top: 29px;
+            font-size: 48px;
+            line-height: 59px;
+        }
+        &__text2 {
+            font-size: 16px;
+            line-height: 32px;
+            text-align: center;
+        }
+        &__link {
+            font-size: 14px;    
+        }
+    }
+    .for {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        &-box__text {
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &__item {
+            grid-column: 1 / -1;
+            height: 375px;
+            font-size: 28px;
+            line-height: 34px;
+            &_big {
+                height: 244px
+            }
+        }
+    }
+
+    
+    .filters {
+        flex-wrap: wrap-reverse;
+        width: 203px;
+        &-box {
+            flex-direction: column;
+            justify-content: start;
+            gap: 14px;
+        }
+    }
+    .form {
+        left: 0;
+        width: fit-content;
+        &__content {
+            flex-direction: column;
+            gap: 32px;
+        }
+        &__left {
+            margin-right: 0;
+        }
+        &__room-types {
+            padding-right: 0px;
+        }
+    }
+    .cart {
+        margin-top: 67px;
+        &__info {
+            display: none;
+        }
+
+        &__items {
+            gap: 18px;
+        }
+
+        &__item {
+            &-image{
+                display: none;
+            }
+            &-name {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &-description, &-price {
+                font-size: 12px;
+                line-height: 15px;
+            }
+            &:first-child {
+                border-top: 0.5px solid rgb(202, 205, 216);
+                padding-top: 18px;
+                padding-bottom: 24px;
+            }
+        }
+        &__button {
+            padding: 11px 0;
+            white-space: nowrap;
+            width: 166px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+        &__form-inputs {
+            margin-right: 27px;
+            margin-left: 27px;
+        }
+        &__buttons {
+            gap: 14px;
+        }
+        &__form {
+            width: 343px;
+        }
+    }
+    .link-box__link-cart {
+        display: none;
+    }
+    .link-box__link-mob {
+        display: block;
+    }
+   
+
+    .product-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .product {
+        width: 343px;
+        &__img {
+            width: 343px;
+        }
+        &__name {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__price {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &-box__text {
+            font-size: 24px;
+            line-height: 29px;
+            width: 70%;
+        }
+    }
+    
+    .footer {
+        &__content {
+            justify-content: center;
+            gap: 34px;
+        }
+    }
+}
