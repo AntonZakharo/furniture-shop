@@ -154,6 +154,7 @@
     .product-content {
         display: flex;
         justify-content: center;
+        gap: 32px;
     }
 
     .product {
@@ -179,7 +180,7 @@
     .footer {
         &__content {
             justify-content: center;
-            gap: 34px;
+            gap: 69px;
         }
     }
 }

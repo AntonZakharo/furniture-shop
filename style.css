@@ -26,6 +26,10 @@ button:hover {
   cursor: pointer;
 }
 
+button {
+  transition: background-color 0.3s ease-in-out;
+}
+
 .top {
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,6 +60,7 @@ button:hover {
   height: 41px;
   background: transparent;
   padding-left: 32px;
+  color: white;
 }
 
 .header__input::-moz-placeholder {
@@ -197,20 +202,19 @@ button:hover {
   background-size: cover;
 }
 
-.product-box_margin {
-  margin-top: 64px;
-}
-
-.product-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-}
-
 .product {
   width: 378px;
 }
-
+.product-content {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 56px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.product-box_margin {
+  margin-top: 64px;
+}
 .product-box__text {
   font-weight: 600;
   font-size: 48px;
@@ -218,7 +222,6 @@ button:hover {
   color: #000000;
   margin-bottom: 32px;
 }
-
 .product__name {
   font-weight: 500;
   font-size: 24px;
@@ -227,22 +230,18 @@ button:hover {
   margin-bottom: 8px;
   margin-top: 10px;
 }
-
 .product__description {
   font-size: 14px;
   line-height: 17px;
   color: #888888;
   margin-bottom: 8px;
 }
-
 .product__price {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   color: #050505;
-  padding-bottom: 19px;
 }
-
 .product__price_crossed {
   text-decoration-line: line-through;
   color: #888888;
@@ -274,7 +273,6 @@ footer {
   padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -347,6 +345,10 @@ footer {
   width: 260px;
   height: 40px;
   padding-left: 17px;
+}
+
+.news__input:focus, .header__input:focus {
+  outline: none;
 }
 
 .news__input::-moz-placeholder {
@@ -570,6 +572,7 @@ footer {
 }
 .cart__form-input {
   border: none;
+  outline: none;
   border-bottom: 1px solid rgb(202, 205, 216);
   background-color: transparent;
 }
@@ -696,6 +699,12 @@ fieldset {
   height: 11px;
   pointer-events: none;
   box-sizing: border-box;
+}
+
+.filters__nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .filter_thin-text {
@@ -1208,6 +1217,7 @@ fieldset {
   .product-content {
     display: flex;
     justify-content: center;
+    gap: 32px;
   }
   .product {
     width: 343px;
@@ -1230,6 +1240,6 @@ fieldset {
   }
   .footer__content {
     justify-content: center;
-    gap: 34px;
+    gap: 69px;
   }
 }/*# sourceMappingURL=style.css.map */
